@@ -1,0 +1,501 @@
+service_type,dentist_experience_years,patient_type,day_of_week,appointment_time,avg_duration
+Extraction,24,Adult,Saturday,Afternoon,22.23
+Upper denture metal,2,Adult,Saturday,Morning,71.49
+Extraction,2,Adult,Tuesday,Morning,20.8
+Plaque and bleeding scores,23,Child,Thursday,Afternoon,7.09
+Crown prep,5,Child,Monday,Afternoon,53.49
+Upper denture acrylic,25,Adult,Thursday,Afternoon,75.68
+Root canal multi,3,Child,Saturday,Morning,80.02
+Fluoride varnish,9,Child,Friday,Morning,3.71
+Fluoride varnish,15,Adult,Thursday,Morning,4.4
+Plaque and bleeding scores,9,Adult,Saturday,Afternoon,7.03
+Preventive advice,11,Child,Thursday,Afternoon,6.14
+Lower denture metal,16,Adult,Wednesday,Afternoon,82.26
+Lower denture metal,23,Child,Tuesday,Afternoon,77.42
+Upper denture metal,8,Adult,Friday,Morning,71.73
+Upper denture acrylic,23,Adult,Saturday,Afternoon,72.47
+Bridge prep conventional,6,Adult,Wednesday,Afternoon,57.29
+Root canal single,1,Child,Saturday,Afternoon,48.16
+Radiographs,11,Adult,Friday,Afternoon,4.57
+Prescription of medicines,15,Child,Wednesday,Afternoon,7.26
+Extraction,9,Adult,Friday,Afternoon,23.99
+Prescription of medicines,3,Adult,Monday,Afternoon,7.69
+Preventive advice,12,Child,Tuesday,Morning,6.28
+Permanent filling,5,Child,Tuesday,Afternoon,21.15
+Bridge prep conventional,4,Adult,Wednesday,Afternoon,57.99
+Root surface debridement,3,Adult,Friday,Afternoon,31.35
+Upper denture metal,20,Adult,Friday,Morning,82.16
+Examination acute,13,Child,Monday,Afternoon,11.54
+Crown prep,16,Child,Monday,Morning,51.57
+Preventive advice,24,Child,Thursday,Morning,6.34
+Root canal single,9,Child,Friday,Afternoon,49.39
+Permanent filling,20,Child,Tuesday,Afternoon,22.97
+Plaque and bleeding scores,15,Adult,Wednesday,Afternoon,6.52
+Bridge prep conventional,9,Adult,Wednesday,Afternoon,57.14
+Crown prep,15,Child,Wednesday,Afternoon,45.72
+Lower denture metal,19,Adult,Tuesday,Afternoon,71.24
+Examination routine,24,Adult,Thursday,Afternoon,9.17
+Root canal single,16,Child,Thursday,Morning,47.19
+Upper denture acrylic,25,Child,Tuesday,Morning,66.75
+Scale and polish,24,Adult,Wednesday,Afternoon,8.47
+Preventive advice,24,Child,Friday,Afternoon,5.78
+Lower denture acrylic,24,Child,Wednesday,Afternoon,69.98
+Fluoride varnish,7,Adult,Friday,Morning,4.16
+Examination acute,12,Child,Saturday,Afternoon,10.8
+Upper denture acrylic,22,Child,Saturday,Morning,64.69
+Examination routine,23,Child,Wednesday,Afternoon,9.72
+Root canal multi,10,Adult,Friday,Morning,79.63
+Lower denture acrylic,25,Adult,Monday,Morning,65.55
+Upper denture acrylic,2,Child,Thursday,Morning,64.0
+Upper denture acrylic,17,Child,Tuesday,Afternoon,66.18
+Lower denture metal,1,Adult,Thursday,Afternoon,83.05
+Upper denture acrylic,21,Adult,Tuesday,Morning,67.73
+Preventive advice,10,Adult,Thursday,Afternoon,5.6
+Fluoride varnish,12,Child,Thursday,Morning,4.18
+Bridge prep conventional,8,Adult,Tuesday,Morning,62.23
+Clinical note reading,7,Adult,Monday,Morning,4.21
+Preventive advice,15,Child,Wednesday,Morning,5.96
+Clinical note reading,7,Child,Wednesday,Morning,3.77
+Extraction,20,Adult,Thursday,Afternoon,21.74
+Crown prep,5,Child,Friday,Afternoon,50.17
+Radiographs,14,Adult,Thursday,Morning,5.49
+Bridge prep conventional,18,Adult,Monday,Morning,68.34
+Lower denture metal,23,Child,Tuesday,Morning,79.8
+Root canal multi,1,Child,Tuesday,Afternoon,80.75
+Lower denture metal,14,Adult,Wednesday,Afternoon,77.2
+Permanent filling,18,Child,Saturday,Morning,22.19
+Scale and polish,23,Adult,Wednesday,Morning,8.68
+Root canal single,6,Adult,Saturday,Afternoon,48.49
+Plaque and bleeding scores,16,Child,Monday,Afternoon,6.31
+Crown prep,11,Adult,Monday,Afternoon,47.74
+Upper denture metal,9,Child,Monday,Morning,73.79
+Upper denture metal,6,Child,Thursday,Morning,73.55
+Upper denture metal,2,Adult,Monday,Morning,74.15
+Root surface debridement,4,Adult,Monday,Morning,32.9
+Preventive advice,21,Child,Thursday,Afternoon,5.93
+Clinical note reading,6,Child,Saturday,Morning,3.8
+Preventive advice,1,Child,Saturday,Morning,6.46
+Lower denture acrylic,18,Child,Tuesday,Afternoon,66.53
+Scale and polish,25,Child,Monday,Morning,8.84
+Root canal multi,24,Adult,Saturday,Afternoon,73.12
+Clinical note reading,7,Adult,Tuesday,Morning,4.2
+Root canal multi,8,Adult,Monday,Morning,83.14
+Upper denture metal,24,Child,Wednesday,Afternoon,78.7
+Radiographs,24,Adult,Tuesday,Morning,5.01
+Permanent filling,24,Child,Tuesday,Afternoon,23.1
+Lower denture metal,18,Child,Wednesday,Morning,74.83
+Examination routine,24,Adult,Thursday,Morning,9.53
+Lower denture acrylic,1,Adult,Tuesday,Afternoon,64.72
+Bridge prep conventional,4,Child,Saturday,Afternoon,66.98
+Lower denture metal,12,Child,Saturday,Morning,72.66
+Scale and polish,7,Adult,Thursday,Morning,9.26
+Examination acute,10,Adult,Wednesday,Morning,10.25
+Root canal single,5,Child,Tuesday,Afternoon,48.26
+Permanent filling,9,Adult,Tuesday,Morning,22.66
+Examination routine,2,Child,Tuesday,Morning,9.96
+Preventive advice,4,Child,Friday,Afternoon,6.11
+Fluoride varnish,17,Adult,Tuesday,Afternoon,4.18
+Preventive advice,13,Child,Thursday,Morning,5.61
+Lower denture metal,20,Child,Tuesday,Afternoon,70.22
+Lower denture acrylic,24,Child,Wednesday,Afternoon,67.44
+Fluoride varnish,8,Child,Tuesday,Morning,4.25
+Examination acute,3,Child,Saturday,Afternoon,10.65
+Scale and polish,8,Child,Wednesday,Afternoon,9.18
+Radiographs,24,Child,Saturday,Morning,4.95
+Upper denture metal,6,Adult,Monday,Morning,76.09
+Preventive advice,3,Child,Tuesday,Morning,5.68
+Preventive advice,10,Child,Saturday,Afternoon,5.4
+Crown prep,7,Adult,Thursday,Afternoon,51.51
+Upper denture acrylic,20,Child,Monday,Morning,63.75
+Extraction,21,Adult,Thursday,Afternoon,21.17
+Lower denture metal,20,Child,Thursday,Afternoon,78.69
+Crown prep,14,Child,Monday,Afternoon,51.99
+Bridge prep conventional,22,Adult,Saturday,Afternoon,62.55
+Crown prep,7,Child,Wednesday,Afternoon,45.12
+Preventive advice,14,Child,Tuesday,Afternoon,5.6
+Plaque and bleeding scores,11,Child,Tuesday,Morning,7.39
+Root surface debridement,8,Adult,Tuesday,Morning,30.33
+Clinical note reading,23,Child,Monday,Morning,3.64
+Upper denture metal,2,Adult,Friday,Afternoon,83.63
+Root canal multi,9,Child,Wednesday,Morning,77.64
+Crown prep,20,Child,Friday,Morning,48.32
+Bridge prep conventional,3,Child,Wednesday,Morning,62.28
+Upper denture metal,2,Adult,Friday,Morning,78.14
+Lower denture acrylic,25,Adult,Thursday,Afternoon,64.29
+Lower denture metal,10,Adult,Wednesday,Afternoon,82.74
+Root canal multi,12,Adult,Wednesday,Morning,82.39
+Clinical note reading,4,Adult,Monday,Morning,4.0
+Scale and polish,10,Adult,Saturday,Morning,9.64
+Examination acute,10,Child,Friday,Afternoon,10.44
+Examination acute,4,Adult,Saturday,Afternoon,12.06
+Scale and polish,3,Child,Monday,Morning,9.15
+Examination acute,1,Adult,Saturday,Afternoon,10.23
+Fluoride varnish,11,Adult,Tuesday,Morning,4.13
+Preventive advice,1,Adult,Tuesday,Morning,6.15
+Permanent filling,17,Adult,Thursday,Morning,25.05
+Radiographs,25,Child,Saturday,Morning,4.54
+Bridge prep conventional,22,Child,Monday,Afternoon,59.65
+Plaque and bleeding scores,13,Adult,Monday,Morning,7.3
+Upper denture acrylic,8,Adult,Monday,Afternoon,69.94
+Scale and polish,23,Adult,Friday,Morning,9.18
+Extraction,8,Adult,Tuesday,Morning,21.04
+Lower denture acrylic,4,Adult,Friday,Afternoon,69.81
+Root canal multi,4,Child,Friday,Morning,75.62
+Examination acute,16,Adult,Friday,Morning,10.38
+Examination acute,8,Adult,Wednesday,Morning,11.96
+Clinical note reading,22,Adult,Wednesday,Morning,3.9
+Prescription of medicines,14,Adult,Thursday,Afternoon,8.7
+Plaque and bleeding scores,24,Adult,Friday,Morning,7.21
+Radiographs,2,Child,Saturday,Morning,5.27
+Preventive advice,17,Child,Wednesday,Afternoon,6.29
+Prescription of medicines,24,Adult,Thursday,Morning,8.22
+Lower denture acrylic,15,Adult,Tuesday,Morning,73.15
+Clinical note reading,14,Adult,Tuesday,Afternoon,3.83
+Plaque and bleeding scores,19,Child,Thursday,Afternoon,7.47
+Scale and polish,7,Child,Tuesday,Morning,9.19
+Root canal multi,4,Adult,Saturday,Afternoon,74.94
+Scale and polish,8,Adult,Thursday,Afternoon,9.71
+Root canal multi,22,Child,Thursday,Morning,78.94
+Plaque and bleeding scores,5,Adult,Monday,Afternoon,7.07
+Prescription of medicines,6,Child,Monday,Morning,8.08
+Clinical note reading,7,Adult,Saturday,Afternoon,3.87
+Lower denture metal,13,Child,Friday,Morning,74.06
+Upper denture metal,15,Child,Friday,Morning,83.97
+Permanent filling,6,Adult,Tuesday,Morning,23.47
+Examination acute,4,Adult,Friday,Morning,10.32
+Fluoride varnish,25,Child,Wednesday,Morning,3.66
+Examination acute,23,Child,Monday,Morning,11.97
+Upper denture metal,12,Adult,Tuesday,Morning,78.81
+Examination routine,16,Adult,Wednesday,Morning,9.29
+Bridge prep conventional,14,Child,Friday,Morning,64.96
+Lower denture acrylic,15,Child,Wednesday,Afternoon,61.43
+Clinical note reading,21,Child,Monday,Afternoon,3.8
+Permanent filling,2,Child,Friday,Afternoon,22.88
+Examination routine,25,Adult,Friday,Morning,10.81
+Examination routine,10,Child,Monday,Afternoon,10.6
+Root surface debridement,24,Child,Thursday,Morning,30.23
+Permanent filling,6,Child,Wednesday,Afternoon,22.89
+Root surface debridement,1,Child,Monday,Afternoon,27.97
+Examination routine,3,Adult,Wednesday,Morning,9.58
+Examination acute,21,Child,Tuesday,Afternoon,10.43
+Examination acute,2,Child,Tuesday,Morning,10.72
+Examination routine,5,Child,Thursday,Afternoon,9.88
+Extraction,23,Adult,Thursday,Afternoon,24.03
+Clinical note reading,6,Adult,Saturday,Morning,4.05
+Extraction,23,Child,Tuesday,Morning,19.87
+Root canal single,8,Adult,Saturday,Afternoon,46.46
+Examination routine,20,Adult,Wednesday,Afternoon,9.05
+Root canal single,14,Adult,Tuesday,Morning,45.39
+Extraction,21,Child,Friday,Morning,22.16
+Scale and polish,6,Child,Saturday,Morning,9.04
+Fluoride varnish,24,Adult,Thursday,Afternoon,3.61
+Preventive advice,23,Adult,Friday,Afternoon,6.59
+Clinical note reading,13,Child,Saturday,Morning,3.67
+Extraction,24,Child,Thursday,Afternoon,21.29
+Bridge prep conventional,23,Child,Monday,Afternoon,64.77
+Crown prep,22,Child,Friday,Afternoon,48.17
+Root canal single,3,Child,Wednesday,Morning,50.68
+Prescription of medicines,13,Adult,Monday,Afternoon,7.24
+Lower denture acrylic,18,Adult,Tuesday,Afternoon,66.85
+Crown prep,11,Child,Monday,Morning,51.14
+Lower denture metal,6,Adult,Saturday,Afternoon,71.1
+Root canal multi,16,Child,Friday,Afternoon,77.35
+Radiographs,7,Child,Wednesday,Morning,5.08
+Upper denture acrylic,20,Adult,Wednesday,Afternoon,66.3
+Examination routine,11,Child,Thursday,Afternoon,9.52
+Lower denture metal,17,Adult,Monday,Morning,82.97
+Examination routine,19,Child,Friday,Afternoon,9.63
+Plaque and bleeding scores,14,Child,Monday,Morning,7.38
+Lower denture acrylic,16,Child,Tuesday,Afternoon,68.1
+Clinical note reading,17,Child,Tuesday,Afternoon,3.61
+Root surface debridement,12,Child,Tuesday,Afternoon,32.62
+Lower denture acrylic,14,Adult,Thursday,Morning,73.37
+Root canal single,9,Child,Thursday,Afternoon,51.55
+Lower denture metal,9,Child,Wednesday,Afternoon,73.81
+Upper denture metal,5,Child,Friday,Afternoon,78.11
+Prescription of medicines,4,Child,Saturday,Afternoon,7.54
+Lower denture acrylic,25,Adult,Saturday,Afternoon,72.72
+Root canal single,9,Child,Tuesday,Morning,47.04
+Extraction,15,Adult,Tuesday,Afternoon,23.09
+Lower denture acrylic,20,Adult,Wednesday,Morning,69.12
+Examination routine,21,Child,Wednesday,Afternoon,10.06
+Prescription of medicines,17,Adult,Friday,Morning,7.9
+Prescription of medicines,2,Adult,Wednesday,Morning,7.64
+Upper denture metal,8,Child,Thursday,Afternoon,76.98
+Crown prep,18,Adult,Tuesday,Afternoon,49.55
+Permanent filling,12,Adult,Saturday,Afternoon,23.03
+Lower denture metal,8,Adult,Tuesday,Morning,70.72
+Plaque and bleeding scores,5,Adult,Monday,Morning,7.33
+Fluoride varnish,8,Child,Wednesday,Morning,3.84
+Root canal multi,13,Adult,Thursday,Morning,80.39
+Crown prep,25,Child,Wednesday,Morning,48.5
+Scale and polish,20,Child,Friday,Afternoon,8.55
+Root canal multi,21,Child,Tuesday,Afternoon,82.95
+Examination routine,13,Adult,Wednesday,Morning,10.49
+Scale and polish,25,Adult,Saturday,Afternoon,8.38
+Examination acute,19,Child,Wednesday,Afternoon,10.68
+Radiographs,17,Child,Saturday,Morning,5.09
+Fluoride varnish,13,Adult,Friday,Morning,4.17
+Upper denture metal,4,Child,Thursday,Morning,72.72
+Crown prep,1,Adult,Wednesday,Afternoon,46.52
+Upper denture metal,9,Child,Tuesday,Morning,82.18
+Root canal single,24,Child,Tuesday,Afternoon,52.79
+Examination routine,25,Adult,Monday,Morning,10.34
+Upper denture metal,15,Adult,Thursday,Morning,86.63
+Lower denture acrylic,21,Child,Friday,Afternoon,71.22
+Examination routine,3,Adult,Wednesday,Afternoon,9.2
+Crown prep,20,Child,Thursday,Afternoon,46.43
+Permanent filling,5,Child,Wednesday,Afternoon,22.78
+Radiographs,14,Child,Monday,Afternoon,4.83
+Scale and polish,8,Child,Tuesday,Afternoon,9.29
+Permanent filling,15,Adult,Saturday,Afternoon,24.86
+Clinical note reading,14,Adult,Saturday,Afternoon,3.81
+Preventive advice,24,Child,Friday,Morning,5.6
+Prescription of medicines,2,Adult,Tuesday,Afternoon,8.13
+Examination acute,13,Adult,Thursday,Morning,10.08
+Lower denture metal,11,Child,Thursday,Afternoon,70.34
+Examination acute,6,Adult,Friday,Morning,10.0
+Plaque and bleeding scores,14,Adult,Wednesday,Afternoon,7.06
+Clinical note reading,1,Child,Saturday,Afternoon,3.63
+Fluoride varnish,20,Child,Friday,Morning,4.27
+Plaque and bleeding scores,18,Child,Monday,Afternoon,6.76
+Bridge prep conventional,8,Child,Tuesday,Afternoon,67.69
+Examination routine,22,Adult,Saturday,Afternoon,9.27
+Root canal multi,2,Adult,Monday,Afternoon,72.3
+Upper denture acrylic,4,Child,Friday,Morning,67.65
+Bridge prep conventional,1,Adult,Wednesday,Afternoon,59.31
+Preventive advice,6,Adult,Tuesday,Morning,6.15
+Extraction,24,Adult,Monday,Afternoon,23.31
+Permanent filling,22,Adult,Thursday,Morning,21.83
+Radiographs,5,Child,Monday,Afternoon,5.24
+Root canal multi,16,Adult,Thursday,Afternoon,75.51
+Examination routine,3,Adult,Thursday,Afternoon,9.14
+Root surface debridement,20,Child,Tuesday,Morning,27.51
+Clinical note reading,20,Adult,Friday,Morning,4.15
+Crown prep,24,Child,Wednesday,Afternoon,52.03
+Fluoride varnish,16,Child,Saturday,Afternoon,3.99
+Root canal single,17,Child,Thursday,Morning,45.3
+Bridge prep conventional,10,Child,Monday,Afternoon,58.07
+Radiographs,1,Adult,Saturday,Afternoon,5.42
+Crown prep,6,Adult,Thursday,Afternoon,46.86
+Fluoride varnish,7,Adult,Saturday,Afternoon,3.92
+Crown prep,15,Child,Wednesday,Afternoon,46.74
+Root canal multi,15,Adult,Monday,Morning,72.83
+Root canal single,19,Child,Friday,Morning,47.66
+Root canal multi,14,Child,Thursday,Morning,82.92
+Radiographs,1,Child,Saturday,Morning,4.89
+Clinical note reading,11,Adult,Wednesday,Morning,4.4
+Fluoride varnish,8,Adult,Friday,Morning,3.74
+Extraction,9,Adult,Thursday,Morning,22.04
+Examination acute,14,Child,Wednesday,Afternoon,10.28
+Prescription of medicines,21,Child,Tuesday,Morning,8.04
+Upper denture acrylic,10,Adult,Monday,Afternoon,75.58
+Crown prep,20,Adult,Saturday,Afternoon,50.09
+Bridge prep conventional,2,Adult,Thursday,Afternoon,58.02
+Examination acute,13,Child,Saturday,Morning,11.26
+Upper denture acrylic,5,Adult,Tuesday,Morning,66.81
+Lower denture acrylic,20,Child,Friday,Morning,73.79
+Extraction,18,Child,Friday,Afternoon,20.48
+Extraction,4,Adult,Saturday,Morning,22.01
+Plaque and bleeding scores,21,Child,Saturday,Afternoon,6.37
+Radiographs,1,Adult,Friday,Morning,5.09
+Root canal multi,19,Adult,Friday,Morning,79.4
+Extraction,2,Adult,Thursday,Morning,24.18
+Examination routine,20,Adult,Friday,Morning,10.64
+Clinical note reading,21,Adult,Friday,Afternoon,3.69
+Plaque and bleeding scores,15,Child,Saturday,Afternoon,7.52
+Extraction,3,Child,Friday,Morning,21.74
+Bridge prep conventional,25,Adult,Monday,Morning,66.5
+Fluoride varnish,24,Adult,Friday,Afternoon,3.98
+Examination acute,8,Adult,Monday,Afternoon,9.93
+Lower denture metal,15,Adult,Wednesday,Afternoon,81.89
+Examination routine,4,Child,Monday,Afternoon,10.09
+Scale and polish,3,Child,Friday,Morning,8.77
+Bridge prep conventional,22,Child,Monday,Morning,58.98
+Permanent filling,24,Adult,Tuesday,Afternoon,21.35
+Examination acute,10,Adult,Friday,Afternoon,10.37
+Root surface debridement,2,Adult,Wednesday,Morning,31.18
+Permanent filling,8,Adult,Friday,Afternoon,22.2
+Lower denture acrylic,13,Child,Monday,Morning,70.1
+Lower denture metal,11,Adult,Friday,Afternoon,75.73
+Lower denture metal,6,Adult,Friday,Afternoon,71.09
+Examination acute,4,Adult,Saturday,Afternoon,10.72
+Root surface debridement,25,Adult,Saturday,Afternoon,29.61
+Crown prep,8,Child,Monday,Afternoon,53.98
+Lower denture metal,2,Adult,Thursday,Afternoon,79.94
+Fluoride varnish,13,Child,Monday,Afternoon,4.03
+Lower denture metal,16,Adult,Wednesday,Afternoon,79.1
+Bridge prep conventional,16,Adult,Thursday,Morning,62.27
+Root surface debridement,11,Child,Tuesday,Morning,29.43
+Examination routine,10,Adult,Tuesday,Afternoon,10.62
+Root surface debridement,3,Adult,Monday,Morning,28.91
+Plaque and bleeding scores,16,Child,Monday,Morning,7.0
+Crown prep,8,Child,Friday,Afternoon,51.67
+Preventive advice,1,Child,Monday,Morning,5.88
+Scale and polish,6,Child,Saturday,Morning,9.16
+Preventive advice,13,Child,Tuesday,Afternoon,5.93
+Lower denture acrylic,22,Adult,Wednesday,Afternoon,73.09
+Extraction,7,Child,Monday,Morning,20.54
+Extraction,13,Child,Wednesday,Afternoon,23.94
+Bridge prep conventional,24,Adult,Monday,Afternoon,63.65
+Clinical note reading,8,Child,Saturday,Morning,3.75
+Permanent filling,25,Adult,Friday,Afternoon,21.5
+Examination routine,23,Child,Tuesday,Morning,10.37
+Upper denture metal,7,Child,Tuesday,Afternoon,81.5
+Root surface debridement,4,Child,Saturday,Afternoon,31.14
+Root canal single,23,Adult,Wednesday,Afternoon,51.79
+Root canal multi,5,Adult,Saturday,Morning,73.14
+Plaque and bleeding scores,10,Child,Thursday,Afternoon,6.64
+Lower denture metal,11,Child,Tuesday,Afternoon,81.41
+Upper denture acrylic,13,Adult,Tuesday,Morning,68.6
+Examination routine,10,Adult,Friday,Morning,9.59
+Plaque and bleeding scores,5,Child,Friday,Morning,7.53
+Plaque and bleeding scores,12,Child,Thursday,Afternoon,7.13
+Lower denture acrylic,7,Child,Tuesday,Afternoon,62.86
+Examination routine,8,Adult,Wednesday,Afternoon,9.53
+Extraction,12,Child,Saturday,Morning,20.79
+Scale and polish,9,Adult,Tuesday,Morning,9.12
+Plaque and bleeding scores,25,Adult,Saturday,Morning,7.2
+Lower denture metal,22,Adult,Tuesday,Morning,83.24
+Examination routine,9,Adult,Monday,Afternoon,9.58
+Lower denture metal,3,Adult,Wednesday,Morning,76.88
+Extraction,14,Child,Monday,Afternoon,22.02
+Upper denture metal,11,Child,Thursday,Morning,73.83
+Scale and polish,9,Adult,Friday,Afternoon,9.17
+Bridge prep conventional,8,Adult,Monday,Morning,67.06
+Root canal multi,8,Child,Wednesday,Afternoon,69.44
+Lower denture acrylic,21,Child,Wednesday,Afternoon,73.13
+Root canal multi,8,Child,Wednesday,Afternoon,71.04
+Upper denture acrylic,3,Adult,Wednesday,Afternoon,73.36
+Lower denture acrylic,4,Child,Wednesday,Morning,70.41
+Upper denture metal,21,Child,Tuesday,Morning,80.14
+Lower denture metal,11,Adult,Wednesday,Morning,76.17
+Lower denture acrylic,18,Adult,Friday,Afternoon,72.47
+Examination acute,15,Adult,Tuesday,Morning,10.53
+Preventive advice,1,Child,Monday,Morning,6.16
+Examination routine,12,Adult,Tuesday,Morning,9.41
+Root surface debridement,16,Adult,Saturday,Afternoon,29.01
+Preventive advice,8,Adult,Monday,Morning,6.03
+Lower denture acrylic,22,Adult,Monday,Afternoon,69.36
+Prescription of medicines,2,Child,Friday,Morning,8.18
+Plaque and bleeding scores,16,Adult,Tuesday,Morning,6.31
+Examination acute,13,Child,Tuesday,Morning,10.62
+Prescription of medicines,19,Adult,Tuesday,Afternoon,8.16
+Crown prep,21,Child,Wednesday,Afternoon,45.38
+Preventive advice,16,Adult,Wednesday,Afternoon,5.71
+Scale and polish,9,Child,Friday,Afternoon,8.5
+Permanent filling,16,Child,Saturday,Morning,24.25
+Fluoride varnish,2,Child,Friday,Afternoon,3.82
+Upper denture acrylic,14,Adult,Thursday,Morning,65.78
+Upper denture metal,5,Adult,Saturday,Afternoon,71.35
+Root surface debridement,24,Child,Thursday,Morning,28.91
+Root canal multi,14,Child,Wednesday,Morning,77.15
+Scale and polish,9,Adult,Friday,Afternoon,8.18
+Lower denture acrylic,14,Child,Wednesday,Afternoon,66.14
+Lower denture acrylic,12,Adult,Thursday,Afternoon,67.31
+Root canal single,25,Child,Wednesday,Morning,46.01
+Radiographs,20,Child,Thursday,Afternoon,4.95
+Prescription of medicines,2,Child,Monday,Afternoon,8.26
+Lower denture metal,25,Child,Wednesday,Morning,75.44
+Scale and polish,23,Adult,Monday,Afternoon,9.68
+Extraction,9,Adult,Wednesday,Afternoon,22.88
+Examination routine,22,Adult,Tuesday,Afternoon,10.64
+Lower denture acrylic,19,Adult,Wednesday,Afternoon,61.54
+Upper denture metal,10,Child,Wednesday,Afternoon,78.9
+Root canal multi,4,Child,Thursday,Morning,81.0
+Root surface debridement,4,Child,Wednesday,Morning,28.35
+Examination routine,5,Adult,Monday,Afternoon,10.66
+Extraction,17,Child,Tuesday,Afternoon,20.57
+Root canal multi,22,Adult,Wednesday,Afternoon,83.77
+Fluoride varnish,23,Child,Wednesday,Morning,3.83
+Radiographs,19,Adult,Friday,Afternoon,5.22
+Plaque and bleeding scores,10,Adult,Monday,Afternoon,6.59
+Root canal multi,24,Adult,Thursday,Afternoon,74.68
+Root surface debridement,23,Adult,Wednesday,Afternoon,28.95
+Bridge prep conventional,3,Adult,Friday,Afternoon,67.0
+Plaque and bleeding scores,23,Child,Friday,Morning,7.16
+Preventive advice,10,Adult,Monday,Morning,5.69
+Fluoride varnish,4,Child,Wednesday,Morning,4.01
+Upper denture metal,6,Adult,Thursday,Afternoon,80.19
+Root canal single,2,Adult,Friday,Morning,45.03
+Preventive advice,11,Child,Tuesday,Afternoon,5.97
+Clinical note reading,20,Child,Tuesday,Morning,4.02
+Preventive advice,17,Child,Friday,Morning,6.44
+Extraction,4,Adult,Wednesday,Afternoon,23.08
+Scale and polish,22,Child,Monday,Afternoon,9.2
+Upper denture acrylic,7,Adult,Wednesday,Afternoon,71.49
+Prescription of medicines,10,Child,Tuesday,Morning,8.66
+Scale and polish,18,Child,Thursday,Afternoon,8.45
+Radiographs,22,Child,Thursday,Afternoon,5.18
+Permanent filling,25,Child,Saturday,Afternoon,21.17
+Clinical note reading,20,Adult,Tuesday,Morning,4.24
+Fluoride varnish,25,Adult,Wednesday,Morning,4.11
+Lower denture metal,7,Child,Thursday,Morning,77.28
+Upper denture acrylic,3,Adult,Thursday,Afternoon,69.9
+Plaque and bleeding scores,1,Adult,Friday,Afternoon,7.07
+Crown prep,21,Adult,Monday,Afternoon,50.09
+Plaque and bleeding scores,9,Child,Wednesday,Afternoon,6.6
+Prescription of medicines,18,Adult,Thursday,Morning,8.27
+Clinical note reading,22,Child,Friday,Morning,4.08
+Clinical note reading,10,Adult,Wednesday,Morning,4.34
+Examination acute,22,Adult,Monday,Morning,10.94
+Root canal multi,1,Adult,Monday,Morning,77.72
+Upper denture metal,11,Adult,Saturday,Afternoon,82.05
+Lower denture acrylic,8,Adult,Saturday,Morning,72.48
+Permanent filling,22,Adult,Friday,Afternoon,23.67
+Radiographs,2,Child,Tuesday,Morning,4.93
+Root canal single,22,Adult,Wednesday,Morning,45.27
+Clinical note reading,10,Adult,Friday,Morning,3.78
+Bridge prep conventional,11,Adult,Saturday,Afternoon,67.62
+Scale and polish,25,Adult,Tuesday,Afternoon,8.32
+Plaque and bleeding scores,23,Child,Saturday,Morning,7.38
+Fluoride varnish,23,Child,Thursday,Afternoon,3.66
+Prescription of medicines,12,Adult,Tuesday,Afternoon,8.61
+Upper denture acrylic,10,Adult,Friday,Morning,73.43
+Plaque and bleeding scores,10,Adult,Monday,Afternoon,7.04
+Examination acute,10,Child,Wednesday,Morning,11.9
+Upper denture metal,14,Adult,Monday,Morning,79.66
+Bridge prep conventional,17,Child,Tuesday,Morning,67.72
+Root surface debridement,15,Adult,Tuesday,Afternoon,27.54
+Lower denture metal,18,Adult,Friday,Morning,71.16
+Upper denture metal,20,Adult,Tuesday,Afternoon,73.33
+Upper denture acrylic,13,Child,Monday,Afternoon,68.19
+Root surface debridement,15,Child,Saturday,Afternoon,32.31
+Root surface debridement,2,Adult,Thursday,Afternoon,30.66
+Extraction,23,Adult,Wednesday,Morning,20.52
+Radiographs,14,Adult,Monday,Afternoon,4.59
+Lower denture metal,25,Adult,Friday,Morning,84.29
+Upper denture acrylic,12,Adult,Wednesday,Morning,67.8
+Prescription of medicines,4,Adult,Thursday,Morning,7.87
+Crown prep,1,Adult,Wednesday,Afternoon,48.36
+Clinical note reading,8,Adult,Saturday,Morning,3.93
+Examination routine,19,Adult,Wednesday,Morning,9.88
+Permanent filling,3,Child,Monday,Afternoon,22.84
+Examination acute,25,Child,Friday,Morning,11.15
+Upper denture acrylic,3,Child,Friday,Afternoon,71.71
+Examination routine,12,Adult,Monday,Morning,9.83
+Permanent filling,11,Adult,Saturday,Afternoon,22.44
+Examination acute,4,Adult,Friday,Morning,11.65
+Examination acute,2,Adult,Friday,Afternoon,10.58
+Crown prep,23,Child,Monday,Morning,51.91
+Root canal multi,17,Child,Wednesday,Afternoon,73.07
+Plaque and bleeding scores,1,Child,Monday,Morning,7.5
+Root canal single,22,Adult,Thursday,Morning,49.8
+Crown prep,11,Child,Wednesday,Afternoon,49.26
+Fluoride varnish,6,Child,Tuesday,Afternoon,4.12
+Bridge prep conventional,1,Child,Friday,Afternoon,66.43
+Examination routine,4,Child,Saturday,Afternoon,10.06
+Lower denture acrylic,11,Adult,Thursday,Morning,63.22
+Upper denture metal,11,Adult,Wednesday,Afternoon,74.87
+Upper denture metal,24,Child,Thursday,Morning,76.39
+Prescription of medicines,22,Adult,Monday,Morning,7.8
+Prescription of medicines,18,Adult,Thursday,Afternoon,7.45
+Root surface debridement,3,Child,Monday,Afternoon,32.67
+Root canal multi,12,Adult,Wednesday,Morning,79.58
+Bridge prep conventional,3,Child,Thursday,Afternoon,56.81
+Fluoride varnish,20,Adult,Friday,Afternoon,4.35
+Root canal single,19,Adult,Saturday,Morning,48.96
+Upper denture acrylic,25,Child,Tuesday,Morning,73.01
+Crown prep,6,Adult,Monday,Afternoon,54.69
+Crown prep,21,Child,Friday,Morning,45.1
+Radiographs,16,Adult,Tuesday,Afternoon,5.34

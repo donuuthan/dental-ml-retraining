@@ -1,0 +1,37 @@
+# Google Cloud Run Job Configuration for Automated Retraining
+# This allows running the retraining script as a scheduled Cloud Run Job
+# 
+# Setup:
+# 1. Build container: gcloud builds submit --tag gcr.io/PROJECT_ID/ml-retraining
+# 2. Create job: gcloud run jobs create ml-retraining --image gcr.io/PROJECT_ID/ml-retraining
+# 3. Schedule: gcloud scheduler jobs create http ml-retraining-schedule \
+#      --schedule="0 2 * * 0" --uri="https://REGION-PROJECT_ID.cloudfunctions.net/ml-retraining" \
+#      --http-method=POST
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: ml-retraining-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: retraining
+        image: gcr.io/PROJECT_ID/ml-retraining:latest
+        command: ["python", "auto_retrain_model.py"]
+        env:
+        - name: FIREBASE_SERVICE_ACCOUNT_KEY
+          valueFrom:
+            secretKeyRef:
+              name: firebase-service-account
+              key: key.json
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "1"
+          limits:
+            memory: "2Gi"
+            cpu: "2"
+      restartPolicy: Never
+  backoffLimit: 3
+

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Firebase
+.firebase/
+serviceAccountKey.json
+*service-account*.json
+
+# Model files (optional - comment out if you want to track model versions)
+# smart_scheduler.pkl
+# smart_scheduler_backup.pkl
+
+# Logs
+*.log
+retraining.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+

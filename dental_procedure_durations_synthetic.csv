@@ -1,0 +1,96 @@
+service_type,dentist_experience_years,patient_type,day_of_week,appointment_time,avg_duration
+Clinical note reading,11,Adult,Thursday,Morning,3.52
+Clinical note reading,15,Adult,Friday,Afternoon,3.91
+Clinical note reading,13,Adult,Thursday,Morning,3.37
+Clinical note reading,11,Adult,Tuesday,Morning,3.82
+Clinical note reading,12,Adult,Thursday,Morning,3.7
+Radiographs,6,Adult,Wednesday,Morning,4.32
+Radiographs,9,Adult,Saturday,Afternoon,4.4
+Radiographs,6,Adult,Saturday,Morning,4.63
+Radiographs,7,Adult,Wednesday,Afternoon,4.91
+Radiographs,8,Adult,Tuesday,Morning,5.05
+Preventive advice,9,Adult,Wednesday,Morning,4.93
+Preventive advice,7,Adult,Monday,Afternoon,5.64
+Preventive advice,8,Adult,Tuesday,Afternoon,5.57
+Preventive advice,8,Adult,Tuesday,Morning,5.37
+Preventive advice,13,Adult,Tuesday,Afternoon,4.9
+Scale and polish,18,Adult,Tuesday,Morning,9.19
+Scale and polish,15,Adult,Tuesday,Morning,9.29
+Scale and polish,18,Adult,Monday,Afternoon,8.76
+Scale and polish,12,Adult,Friday,Afternoon,9.5
+Scale and polish,13,Adult,Monday,Morning,8.48
+Extraction,12,Adult,Saturday,Morning,24.14
+Extraction,10,Adult,Saturday,Afternoon,23.58
+Extraction,11,Adult,Monday,Afternoon,23.32
+Extraction,9,Adult,Thursday,Afternoon,23.35
+Extraction,7,Adult,Thursday,Morning,21.94
+Root surface debridement,8,Adult,Saturday,Morning,31.05
+Root surface debridement,6,Adult,Friday,Afternoon,30.98
+Root surface debridement,5,Adult,Tuesday,Afternoon,27.6
+Root surface debridement,6,Adult,Tuesday,Morning,27.63
+Root surface debridement,9,Adult,Saturday,Morning,31.9
+Root canal single,18,Adult,Monday,Morning,47.95
+Root canal single,19,Adult,Friday,Afternoon,51.49
+Root canal single,17,Adult,Wednesday,Morning,50.09
+Root canal single,16,Adult,Wednesday,Morning,46.19
+Root canal single,16,Adult,Wednesday,Afternoon,46.14
+Root canal multi,22,Adult,Tuesday,Morning,84.87
+Root canal multi,17,Adult,Wednesday,Morning,75.38
+Root canal multi,19,Adult,Friday,Afternoon,84.65
+Root canal multi,21,Adult,Monday,Afternoon,71.96
+Root canal multi,21,Adult,Monday,Afternoon,74.15
+Crown prep,17,Adult,Thursday,Afternoon,48.84
+Crown prep,16,Adult,Wednesday,Afternoon,52.89
+Crown prep,11,Adult,Saturday,Morning,48.82
+Crown prep,12,Adult,Friday,Morning,45.56
+Crown prep,14,Adult,Friday,Morning,53.94
+Upper denture metal,14,Adult,Tuesday,Morning,82.9
+Upper denture metal,19,Adult,Saturday,Afternoon,77.28
+Upper denture metal,13,Adult,Tuesday,Morning,81.98
+Upper denture metal,16,Adult,Tuesday,Morning,72.77
+Upper denture metal,14,Adult,Friday,Morning,80.29
+Fluoride varnish,3,Child,Saturday,Afternoon,3.97
+Fluoride varnish,9,Child,Friday,Afternoon,4.47
+Fluoride varnish,6,Child,Saturday,Afternoon,4.05
+Fluoride varnish,9,Child,Friday,Afternoon,4.43
+Fluoride varnish,9,Child,Monday,Afternoon,4.64
+Preventive advice,5,Child,Saturday,Morning,5.3
+Preventive advice,5,Child,Wednesday,Afternoon,6.27
+Preventive advice,8,Child,Monday,Afternoon,5.83
+Preventive advice,4,Child,Tuesday,Morning,5.95
+Preventive advice,7,Child,Tuesday,Morning,5.28
+Scale and polish,10,Child,Wednesday,Afternoon,5.44
+Scale and polish,9,Child,Monday,Afternoon,5.3
+Scale and polish,5,Child,Friday,Morning,5.26
+Scale and polish,9,Child,Wednesday,Afternoon,5.2
+Scale and polish,6,Child,Thursday,Morning,4.93
+Extraction deciduous,12,Child,Saturday,Afternoon,15.98
+Extraction deciduous,11,Child,Thursday,Morning,17.95
+Extraction deciduous,11,Child,Friday,Morning,15.94
+Extraction deciduous,13,Child,Wednesday,Morning,17.68
+Extraction deciduous,11,Child,Wednesday,Morning,17.09
+Endodontic deciduous,8,Child,Friday,Morning,22.19
+Endodontic deciduous,8,Child,Monday,Afternoon,22.09
+Endodontic deciduous,6,Child,Tuesday,Afternoon,22.96
+Endodontic deciduous,11,Child,Friday,Afternoon,20.35
+Endodontic deciduous,12,Child,Monday,Afternoon,21.71
+Preformed crown,14,Child,Friday,Morning,22.42
+Preformed crown,10,Child,Thursday,Afternoon,22.04
+Preformed crown,11,Child,Thursday,Morning,22.43
+Preformed crown,10,Child,Saturday,Morning,22.61
+Preformed crown,11,Child,Monday,Morning,22.27
+Endodontic single rooted,12,Child,Friday,Afternoon,44.87
+Endodontic single rooted,9,Child,Monday,Afternoon,51.08
+Endodontic single rooted,14,Child,Wednesday,Morning,53.04
+Endodontic single rooted,13,Child,Wednesday,Morning,45.93
+Endodontic single rooted,9,Child,Friday,Morning,48.5
+Endodontic multirooted,17,Child,Monday,Afternoon,80.38
+Endodontic multirooted,14,Child,Tuesday,Morning,81.84
+Endodontic multirooted,14,Child,Wednesday,Afternoon,76.87
+Endodontic multirooted,12,Child,Saturday,Afternoon,77.27
+Endodontic multirooted,12,Child,Saturday,Afternoon,73.26
+Extraction permanent,8,Child,Thursday,Afternoon,21.08
+Extraction permanent,10,Child,Monday,Morning,22.72
+Extraction permanent,7,Child,Monday,Morning,20.97
+Extraction permanent,9,Child,Friday,Morning,24.49
+Extraction permanent,10,Child,Wednesday,Morning,23.8
