@@ -61,7 +61,7 @@ jobs:
       
       - name: Upload retraining logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: retraining-logs
           path: retraining.log
