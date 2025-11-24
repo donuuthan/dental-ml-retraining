@@ -55,7 +55,7 @@ jobs:
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           git add smart_scheduler.pkl
-          git add retraining.log
+          # Log file is uploaded as artifact, no need to commit it
           git diff --staged --quiet || git commit -m "🤖 Auto-retrained ML model [skip ci]"
           git push || echo "No changes to commit"
       
