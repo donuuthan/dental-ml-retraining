@@ -27,12 +27,10 @@ The ML training pipeline had a potential bug where duplicate detection would inc
    - This ensures that appointments with identical details but different IDs are both kept
    - Logs show how many duplicates were removed
 
-3. **Multi-CSV loading**
-   - Script now loads all three synthetic CSV files:
-     - `durations-synthetic-1.csv`
-     - `durations-synthetic-2.csv`
-     - `durations-synthetic-3.csv`
-   - Falls back to original CSV if synthetic files don't exist
+3. **Training data strategy**
+   - **Initial training**: Uses synthetic CSV files (`durations-synthetic-1.csv`, `durations-synthetic-2.csv`, `durations-synthetic-3.csv`) when no real data exists
+   - **Retraining**: Once real appointment data is available in Firebase, uses ONLY real data (synthetic CSVs are skipped)
+   - This ensures the model learns from actual clinic patterns, not synthetic data
 
 4. **Firebase data integration**
    - Firebase training data now includes `appointmentId` (from `appointmentId` or `appointment_id` field, or auto-generated)
@@ -64,11 +62,12 @@ python "smart scheduling/auto_retrain_model.py"
 ```
 
 The script will:
-1. Load all synthetic CSV files (or fallback to original)
-2. Export new data from Firebase
-3. Combine all data sources
-4. Remove duplicates based on `appointmentId` only
-5. Train the model with the cleaned dataset
+1. Check if real Firebase data exists
+2. If real data exists: Use ONLY real data (skip synthetic CSVs)
+3. If no real data: Use synthetic CSVs for initial training
+4. Export new data from Firebase (if configured)
+5. Remove duplicates based on `appointmentId` only
+6. Train the model with the cleaned dataset
 
 ### Logging
 

@@ -146,11 +146,14 @@ def load_csv_file(csv_path, source_name="CSV"):
     
     return training_data
 
-def load_original_csv():
-    """Load all CSV training data files (synthetic and original)."""
+def load_initial_training_data():
+    """
+    Load initial/fundamental training data from synthetic CSV files.
+    These are only used for bootstrapping the model when no real data exists.
+    """
     all_training_data = []
     
-    # First, try to load synthetic CSV files
+    # Load synthetic CSV files (fundamental training data)
     synthetic_loaded = False
     for csv_file in SYNTHETIC_CSV_FILES:
         if os.path.exists(csv_file):
@@ -159,14 +162,15 @@ def load_original_csv():
             synthetic_loaded = True
     
     if synthetic_loaded:
-        logger.info(f"Loaded data from {sum(1 for f in SYNTHETIC_CSV_FILES if os.path.exists(f))} synthetic CSV file(s)")
+        logger.info(f"Loaded {sum(1 for f in SYNTHETIC_CSV_FILES if os.path.exists(f))} synthetic CSV file(s) for initial training")
     else:
         # Fallback to original CSV if synthetic files don't exist
         if ORIGINAL_CSV:
             data = load_csv_file(ORIGINAL_CSV, source_name="original CSV")
             all_training_data.extend(data)
+            logger.info("Loaded original CSV for initial training")
         else:
-            logger.warning("No CSV files found. Please ensure synthetic CSV files exist or set ORIGINAL_CSV path.")
+            logger.warning("No initial training CSV files found.")
     
     return all_training_data
 
@@ -308,18 +312,30 @@ def main():
         logger.error("Firebase initialization failed. Exiting.")
         sys.exit(1)
     
-    # Export new training data from Firebase (only if Firebase is configured)
-    new_training_data = []
+    # Export real training data from Firebase (only if Firebase is configured)
+    real_training_data = []
     if firebase_status is True:
-        new_training_data = export_training_data()
+        real_training_data = export_training_data()
     else:
         logger.info("Skipping Firebase data export (Firebase not configured)")
     
-    # Load original CSV data (includes all synthetic CSVs)
-    original_training_data = load_original_csv()
-    
-    # Combine datasets
-    all_training_data = original_training_data + new_training_data
+    # Determine which data to use for training
+    # Strategy: Use real Firebase data if available, otherwise use synthetic CSVs for initial training
+    if len(real_training_data) > 0:
+        # We have real data - use ONLY real data (skip synthetic CSVs)
+        logger.info("=" * 60)
+        logger.info("Using REAL appointment data from Firebase for retraining")
+        logger.info("Skipping synthetic CSV files (only used for initial training)")
+        logger.info("=" * 60)
+        all_training_data = real_training_data
+    else:
+        # No real data yet - use synthetic CSVs for initial/fundamental training
+        logger.info("=" * 60)
+        logger.info("No real data available - using SYNTHETIC CSV files for initial training")
+        logger.info("Once real appointment data is collected, future retraining will use real data only")
+        logger.info("=" * 60)
+        initial_training_data = load_initial_training_data()
+        all_training_data = initial_training_data
     
     if len(all_training_data) < MIN_TRAINING_SAMPLES:
         logger.warning(f"Not enough training samples ({len(all_training_data)} < {MIN_TRAINING_SAMPLES}). Skipping retraining.")
@@ -327,9 +343,12 @@ def main():
         sys.exit(0)
     
     logger.info(f"Total training samples before deduplication: {len(all_training_data)}")
-    logger.info(f"  - Original CSV: {len(original_training_data)}")
-    logger.info(f"  - New from Firebase: {len(new_training_data)}")
-    logger.info(f"  - Custom procedures: {sum(1 for d in all_training_data if d.get('isCustomProcedure', False))}")
+    if len(real_training_data) > 0:
+        logger.info(f"  - Real data from Firebase: {len(real_training_data)}")
+        logger.info(f"  - Custom procedures: {sum(1 for d in all_training_data if d.get('isCustomProcedure', False))}")
+    else:
+        logger.info(f"  - Initial training data (synthetic CSVs): {len(all_training_data)}")
+        logger.info("  - Note: This is initial training. Future retraining will use real Firebase data.")
     
     # Convert to DataFrame
     df = pd.DataFrame(all_training_data)
