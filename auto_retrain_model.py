@@ -375,8 +375,8 @@ def main():
     # Save model
     if save_model(model, encoders, metrics):
         # Mark data as used (only if Firebase is configured and we exported data)
-        if firebase_status is True and len(new_training_data) > 0:
-            mark_data_as_used(len(new_training_data))
+        if firebase_status is True and len(real_training_data) > 0:
+            mark_data_as_used(len(real_training_data))
         
         logger.info("=" * 60)
         logger.info("Model retraining completed successfully!")
