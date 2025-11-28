@@ -43,6 +43,13 @@ logger = logging.getLogger(__name__)
 SERVICE_ACCOUNT_KEY = os.getenv('FIREBASE_SERVICE_ACCOUNT_KEY', 'path/to/serviceAccountKey.json')
 # Try to find CSV in current directory or parent directories
 _script_dir = os.path.dirname(__file__)
+# List of synthetic CSV files to load
+SYNTHETIC_CSV_FILES = [
+    os.path.join(_script_dir, 'durations-synthetic-1.csv'),
+    os.path.join(_script_dir, 'durations-synthetic-2.csv'),
+    os.path.join(_script_dir, 'durations-synthetic-3.csv'),
+]
+# Fallback to original CSV if synthetic files don't exist
 _csv_paths = [
     os.path.join(_script_dir, 'dental_procedure_durations_500.csv'),
     os.path.join(_script_dir, '..', 'dental_procedure_durations_500.csv'),
@@ -55,7 +62,7 @@ MIN_TRAINING_SAMPLES = 50  # Minimum samples needed to retrain
 TEST_SIZE = 0.2  # 20% for testing
 
 def initialize_firebase():
-    """Initialize Firebase Admin SDK."""
+    """Initialize Firebase Admin SDK. Returns True if successful, False if error, None if not configured."""
     try:
         if os.path.exists(SERVICE_ACCOUNT_KEY):
             cred = credentials.Certificate(SERVICE_ACCOUNT_KEY)
@@ -63,16 +70,22 @@ def initialize_firebase():
             logger.info("Firebase initialized successfully")
             return True
         else:
-            logger.error(f"Service account key not found at {SERVICE_ACCOUNT_KEY}")
-            logger.info("Set FIREBASE_SERVICE_ACCOUNT_KEY environment variable or update path")
-            return False
+            logger.warning(f"Service account key not found at {SERVICE_ACCOUNT_KEY}")
+            logger.info("Firebase not configured - will train from CSV files only")
+            logger.info("To enable Firebase data export, set FIREBASE_SERVICE_ACCOUNT_KEY environment variable")
+            return None  # Not an error, just not configured
     except Exception as e:
         logger.error(f"Error initializing Firebase: {e}")
         return False
 
 def export_training_data():
     """Export training data from Firebase mlTrainingData collection."""
-    db = firestore.client()
+    try:
+        db = firestore.client()
+    except Exception as e:
+        logger.warning(f"Firebase not initialized - skipping Firebase data export: {e}")
+        return []
+    
     training_data = []
     
     try:
@@ -81,7 +94,10 @@ def export_training_data():
         
         for doc in docs:
             data = doc.to_dict()
+            # Generate appointment_id if not present (for Firebase data)
+            appointment_id = data.get('appointmentId') or data.get('appointment_id') or f"firebase_{doc.id}"
             training_data.append({
+                'appointmentId': appointment_id,
                 'procedureType': data.get('procedureType', '').lower(),
                 'patientType': data.get('patientType', 'Adult'),
                 'dayOfWeek': data.get('dayOfWeek', ''),
@@ -97,18 +113,22 @@ def export_training_data():
         logger.error(f"Error exporting training data: {e}")
         return []
 
-def load_original_csv():
-    """Load original CSV training data."""
+def load_csv_file(csv_path, source_name="CSV"):
+    """Load training data from a single CSV file."""
     training_data = []
     
     try:
-        if os.path.exists(ORIGINAL_CSV):
-            df = pd.read_csv(ORIGINAL_CSV)
+        if os.path.exists(csv_path):
+            df = pd.read_csv(csv_path)
             
             # Map CSV columns to training format
-            # Adjust column names based on your CSV structure
-            for _, row in df.iterrows():
+            # Support both appointment_id and generate one if missing
+            for idx, row in df.iterrows():
+                # Get appointment_id if present, otherwise generate one
+                appointment_id = str(row.get('appointment_id', row.get('appointmentId', f"{source_name}_{idx}")))
+                
                 training_data.append({
+                    'appointmentId': appointment_id,
                     'procedureType': str(row.get('service_type', '')).lower(),
                     'patientType': str(row.get('patient_type', 'Adult')),
                     'dayOfWeek': str(row.get('day_of_week', '')),
@@ -117,14 +137,38 @@ def load_original_csv():
                     'isCustomProcedure': False,
                 })
             
-            logger.info(f"Loaded {len(training_data)} records from original CSV")
+            logger.info(f"Loaded {len(training_data)} records from {source_name}: {csv_path}")
         else:
-            logger.warning(f"Original CSV not found at {ORIGINAL_CSV}")
+            logger.warning(f"CSV file not found: {csv_path}")
             
     except Exception as e:
-        logger.error(f"Error loading original CSV: {e}")
+        logger.error(f"Error loading {source_name} CSV ({csv_path}): {e}")
     
     return training_data
+
+def load_original_csv():
+    """Load all CSV training data files (synthetic and original)."""
+    all_training_data = []
+    
+    # First, try to load synthetic CSV files
+    synthetic_loaded = False
+    for csv_file in SYNTHETIC_CSV_FILES:
+        if os.path.exists(csv_file):
+            data = load_csv_file(csv_file, source_name=os.path.basename(csv_file))
+            all_training_data.extend(data)
+            synthetic_loaded = True
+    
+    if synthetic_loaded:
+        logger.info(f"Loaded data from {sum(1 for f in SYNTHETIC_CSV_FILES if os.path.exists(f))} synthetic CSV file(s)")
+    else:
+        # Fallback to original CSV if synthetic files don't exist
+        if ORIGINAL_CSV:
+            data = load_csv_file(ORIGINAL_CSV, source_name="original CSV")
+            all_training_data.extend(data)
+        else:
+            logger.warning("No CSV files found. Please ensure synthetic CSV files exist or set ORIGINAL_CSV path.")
+    
+    return all_training_data
 
 def prepare_features(df):
     """Prepare features for model training."""
@@ -258,15 +302,20 @@ def main():
     logger.info("Starting automated model retraining")
     logger.info("=" * 60)
     
-    # Initialize Firebase
-    if not initialize_firebase():
-        logger.error("Failed to initialize Firebase. Exiting.")
+    # Initialize Firebase (optional - can train from CSV only)
+    firebase_status = initialize_firebase()
+    if firebase_status is False:
+        logger.error("Firebase initialization failed. Exiting.")
         sys.exit(1)
     
-    # Export new training data from Firebase
-    new_training_data = export_training_data()
+    # Export new training data from Firebase (only if Firebase is configured)
+    new_training_data = []
+    if firebase_status is True:
+        new_training_data = export_training_data()
+    else:
+        logger.info("Skipping Firebase data export (Firebase not configured)")
     
-    # Load original CSV data
+    # Load original CSV data (includes all synthetic CSVs)
     original_training_data = load_original_csv()
     
     # Combine datasets
@@ -277,13 +326,26 @@ def main():
         logger.info("Model will continue using existing version.")
         sys.exit(0)
     
-    logger.info(f"Total training samples: {len(all_training_data)}")
+    logger.info(f"Total training samples before deduplication: {len(all_training_data)}")
     logger.info(f"  - Original CSV: {len(original_training_data)}")
     logger.info(f"  - New from Firebase: {len(new_training_data)}")
     logger.info(f"  - Custom procedures: {sum(1 for d in all_training_data if d.get('isCustomProcedure', False))}")
     
     # Convert to DataFrame
     df = pd.DataFrame(all_training_data)
+    
+    # Remove duplicates based on appointmentId (not on feature columns)
+    # This ensures that if a patient books the same appointment twice, both are kept
+    initial_count = len(df)
+    if 'appointmentId' in df.columns:
+        df = df.drop_duplicates(subset=['appointmentId'], keep='first')
+        duplicates_removed = initial_count - len(df)
+        if duplicates_removed > 0:
+            logger.info(f"Removed {duplicates_removed} duplicate records based on appointmentId")
+        logger.info(f"Total unique training samples: {len(df)}")
+    else:
+        logger.warning("appointmentId column not found. Cannot perform proper duplicate detection.")
+        logger.warning("Consider adding appointmentId to your CSV files to avoid incorrectly removing legitimate duplicate appointments.")
     
     # Prepare features
     X, y, encoders = prepare_features(df)
@@ -293,8 +355,9 @@ def main():
     
     # Save model
     if save_model(model, encoders, metrics):
-        # Mark data as used
-        mark_data_as_used(len(new_training_data))
+        # Mark data as used (only if Firebase is configured and we exported data)
+        if firebase_status is True and len(new_training_data) > 0:
+            mark_data_as_used(len(new_training_data))
         
         logger.info("=" * 60)
         logger.info("Model retraining completed successfully!")

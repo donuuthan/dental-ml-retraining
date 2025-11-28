@@ -1,0 +1,101 @@
+appointment_id,service_type,dentist_experience_years,patient_type,day_of_week,appointment_time,avg_duration
+test-0001,Extraction,10,Adult,Monday,Morning,22.5
+test-0002,Scale and polish,8,Adult,Tuesday,Afternoon,18
+test-0003,Root Canal,12,Child,Wednesday,Morning,45
+test-0004,Filling,5,Adult,Thursday,Afternoon,30
+test-0005,Teeth Whitening,7,Adult,Friday,Morning,40
+test-0006,Extraction,15,Child,Monday,Afternoon,25
+test-0007,Scale and polish,6,Adult,Tuesday,Morning,20
+test-0008,Filling,9,Child,Wednesday,Afternoon,35
+test-0009,Root Canal,11,Adult,Thursday,Morning,50
+test-0010,Teeth Whitening,8,Adult,Friday,Afternoon,38
+test-0011,Extraction,14,Adult,Monday,Morning,23
+test-0012,Scale and polish,7,Child,Tuesday,Afternoon,19
+test-0013,Filling,10,Adult,Wednesday,Morning,32
+test-0014,Root Canal,13,Child,Thursday,Afternoon,48
+test-0015,Teeth Whitening,9,Adult,Friday,Morning,42
+test-0016,Extraction,12,Adult,Monday,Afternoon,27
+test-0017,Scale and polish,5,Child,Tuesday,Morning,17
+test-0018,Filling,11,Adult,Wednesday,Afternoon,33
+test-0019,Root Canal,14,Child,Thursday,Morning,46
+test-0020,Teeth Whitening,8,Adult,Friday,Afternoon,39
+test-0021,Extraction,13,Adult,Monday,Morning,24
+test-0022,Scale and polish,6,Child,Tuesday,Afternoon,21
+test-0023,Filling,9,Adult,Wednesday,Morning,31
+test-0024,Root Canal,12,Child,Thursday,Afternoon,44
+test-0025,Teeth Whitening,7,Adult,Friday,Morning,41
+test-0026,Extraction,15,Adult,Monday,Afternoon,26
+test-0027,Scale and polish,8,Child,Tuesday,Morning,18
+test-0028,Filling,10,Adult,Wednesday,Afternoon,34
+test-0029,Root Canal,11,Child,Thursday,Morning,49
+test-0030,Teeth Whitening,9,Adult,Friday,Afternoon,37
+test-0031,Extraction,12,Adult,Monday,Morning,23
+test-0032,Scale and polish,7,Child,Tuesday,Afternoon,20
+test-0033,Filling,10,Adult,Wednesday,Morning,32
+test-0034,Root Canal,13,Child,Thursday,Afternoon,47
+test-0035,Teeth Whitening,8,Adult,Friday,Morning,40
+test-0036,Extraction,14,Adult,Monday,Afternoon,25
+test-0037,Scale and polish,6,Child,Tuesday,Morning,19
+test-0038,Filling,9,Adult,Wednesday,Afternoon,33
+test-0039,Root Canal,12,Child,Thursday,Morning,45
+test-0040,Teeth Whitening,7,Adult,Friday,Afternoon,38
+test-0041,Extraction,13,Adult,Monday,Morning,24
+test-0042,Scale and polish,8,Child,Tuesday,Afternoon,22
+test-0043,Filling,11,Adult,Wednesday,Morning,35
+test-0044,Root Canal,14,Child,Thursday,Afternoon,46
+test-0045,Teeth Whitening,9,Adult,Friday,Morning,41
+test-0046,Extraction,12,Adult,Monday,Afternoon,27
+test-0047,Scale and polish,5,Child,Tuesday,Morning,18
+test-0048,Filling,10,Adult,Wednesday,Afternoon,33
+test-0049,Root Canal,13,Child,Thursday,Morning,48
+test-0050,Teeth Whitening,8,Adult,Friday,Afternoon,39
+test-0051,Extraction,14,Adult,Monday,Morning,25
+test-0052,Scale and polish,7,Child,Tuesday,Afternoon,21
+test-0053,Filling,9,Adult,Wednesday,Morning,32
+test-0054,Root Canal,12,Child,Thursday,Afternoon,44
+test-0055,Teeth Whitening,7,Adult,Friday,Morning,42
+test-0056,Extraction,15,Adult,Monday,Afternoon,26
+test-0057,Scale and polish,6,Child,Tuesday,Morning,20
+test-0058,Filling,10,Adult,Wednesday,Afternoon,34
+test-0059,Root Canal,13,Child,Thursday,Morning,47
+test-0060,Teeth Whitening,8,Adult,Friday,Afternoon,38
+test-0061,Extraction,12,Adult,Monday,Morning,24
+test-0062,Scale and polish,5,Child,Tuesday,Afternoon,19
+test-0063,Filling,11,Adult,Wednesday,Morning,33
+test-0064,Root Canal,14,Child,Thursday,Afternoon,46
+test-0065,Teeth Whitening,9,Adult,Friday,Morning,40
+test-0066,Extraction,13,Adult,Monday,Afternoon,27
+test-0067,Scale and polish,7,Child,Tuesday,Morning,21
+test-0068,Filling,10,Adult,Wednesday,Afternoon,32
+test-0069,Root Canal,12,Child,Thursday,Morning,45
+test-0070,Teeth Whitening,8,Adult,Friday,Afternoon,39
+test-0071,Extraction,14,Adult,Monday,Morning,25
+test-0072,Scale and polish,6,Child,Tuesday,Afternoon,20
+test-0073,Filling,9,Adult,Wednesday,Morning,34
+test-0074,Root Canal,13,Child,Thursday,Afternoon,48
+test-0075,Teeth Whitening,7,Adult,Friday,Morning,41
+test-0076,Extraction,12,Adult,Monday,Afternoon,26
+test-0077,Scale and polish,8,Child,Tuesday,Morning,22
+test-0078,Filling,10,Adult,Wednesday,Afternoon,35
+test-0079,Root Canal,11,Child,Thursday,Morning,47
+test-0080,Teeth Whitening,9,Adult,Friday,Afternoon,38
+test-0081,Extraction,13,Adult,Monday,Morning,24
+test-0082,Scale and polish,7,Child,Tuesday,Afternoon,19
+test-0083,Filling,11,Adult,Wednesday,Morning,33
+test-0084,Root Canal,14,Child,Thursday,Afternoon,46
+test-0085,Teeth Whitening,8,Adult,Friday,Morning,40
+test-0086,Extraction,15,Adult,Monday,Afternoon,27
+test-0087,Scale and polish,6,Child,Tuesday,Morning,20
+test-0088,Filling,9,Adult,Wednesday,Afternoon,34
+test-0089,Root Canal,12,Child,Thursday,Morning,45
+test-0090,Teeth Whitening,7,Adult,Friday,Afternoon,39
+test-0091,Extraction,14,Adult,Monday,Morning,25
+test-0092,Scale and polish,8,Child,Tuesday,Afternoon,21
+test-0093,Filling,10,Adult,Wednesday,Morning,32
+test-0094,Root Canal,13,Child,Thursday,Afternoon,47
+test-0095,Teeth Whitening,9,Adult,Friday,Morning,41
+test-0096,Extraction,12,Adult,Monday,Afternoon,26
+test-0097,Scale and polish,5,Child,Tuesday,Morning,18
+test-0098,Filling,11,Adult,Wednesday,Afternoon,33
+test-0099,Root Canal,14,Child,Thursday,Morning,46
+test-0100,Teeth Whitening,8,Adult,Friday,Afternoon,38
